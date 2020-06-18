@@ -17,13 +17,15 @@ function getMovies(searchText) {
       let output = "";
       $.each(movies, (index, movie) => {
         output += `
+        
               <div class= col-md-3>
-                  <div class="well text-center>
-                  <img src="${movie.Poster}" class="thumbnail">
+              
+                  <div text-center>
+                  <img src="${movie.Poster}" class="display-img">
                     <h5>${movie.Title} </h5>
                     <h5>${movie.Year} </h5>
                     <a onClick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
-
+                    
                   </div>
               </div>
           `;

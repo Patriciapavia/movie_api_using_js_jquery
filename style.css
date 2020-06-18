@@ -1,0 +1,16 @@
+#movies img,
+#movieInfo img {
+  width: 100%;
+  height: 500px;
+  max-height: 400px;
+}
+
+@media (min-width: 960px) {
+  #movies .col-md-3 .well {
+    height: 390px;
+  }
+
+  #movies .col-md-3 img {
+    height: 240px;
+  }
+}
